@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoffeeDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CoffeeDatabase.dbo.category' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="category">
+          <Property Name="categoryID" Type="int" />
+          <Property Name="categoryName" Type="varchar" MaxLength="255" />
+          <Property Name="categoryDescription" Type="varchar(max)" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CoffeeDatabase.dbo.coffee_order' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="coffee_order">
+          <Property Name="order_no" Type="int" />
+          <Property Name="order_name" Type="varchar" MaxLength="255" />
+          <Property Name="coffee_size" Type="varchar" MaxLength="255" />
+          <Property Name="shot_type" Type="varchar" MaxLength="255" />
+          <Property Name="number_of_shots" Type="int" />
+          <Property Name="type_of_milk" Type="varchar" MaxLength="255" />
+          <Property Name="foam" Type="varchar" MaxLength="255" />
+          <Property Name="toppings" Type="varchar" MaxLength="255" />
+          <Property Name="flavours" Type="varchar" MaxLength="255" />
+          <Property Name="price" Type="decimal" Precision="4" Scale="2" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CoffeeDatabase.dbo.equipment' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="equipment">
+          <Property Name="equipmentID" Type="int" />
+          <Property Name="equipmentType" Type="varchar" MaxLength="255" />
+          <Property Name="price" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="supplierID" Type="int" />
+          <Property Name="categoryID" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CoffeeDatabase.dbo.Inventory' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Inventory">
+          <Property Name="inventoryID" Type="int" />
+          <Property Name="inventoryName" Type="varchar" MaxLength="255" />
+          <Property Name="categoryID" Type="int" />
+          <Property Name="supplierID" Type="int" />
+          <Property Name="quantityPerUnit" Type="varchar" MaxLength="255" />
+          <Property Name="unitPrice" Type="decimal" Precision="4" Scale="2" />
+          <Property Name="unitsInStock" Type="int" />
+          <Property Name="replenAmount" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'CoffeeDatabase.dbo.Supplier' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Supplier">
+          <Property Name="supplierID" Type="int" />
+          <Property Name="companyName" Type="varchar" MaxLength="255" />
+          <Property Name="purchasedFrom" Type="varchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityContainer Name="CoffeeDatabaseModelStoreContainer" />
+</Schema>
