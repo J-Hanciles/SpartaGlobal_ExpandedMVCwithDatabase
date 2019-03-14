@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-3">
+        <h2>About the Coffee</h2>
+        <br />
+        <p>
+            Where did it start? Click below to find out.
+        </p>
+        <p>@Html.ActionLink("About", "About") </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Coffee details</h2>
+        <br />
+        <p>If somehow you don't know by now, EDUCATE YOURSELF!!! Click below</p>
+        <p>@Html.ActionLink("Where did it start", "Origins", "Coffee")</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Who's the best?</h2>
+        <br />
+        <p>Here's a list of Coffee Shops, just because. Click below</p>
+        <p>@Html.ActionLink("Competition", "ListofCompetitors", "Coffee")</p>
+    </div>
+    <div class="col-md-3">
+        @using (Html.BeginForm("Index2", "Home", FormMethod.Post))
+        {
+
+            @Html.Label("", "Enter First Name")<br />
+            @Html.TextBox("First Name", "")
+
+            @Html.Label("", "Enter Last Name")<br />
+            @Html.TextBox("Last Name", "")
+
+            @Html.Label("", "Enter Your Coffee")<br />
+            @Html.TextBox("Enter Your Coffee", "")
+
+            @Html.Label("", "With Milk")<br />
+            @Html.TextBox("Enter Password", "")
+
+            <input type="submit" />
+
+        }
+
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <h5>
+            @Html.ActionLink("Back to the Blender", "Index")
+
+        </h5>
+    </div>
+</div>
